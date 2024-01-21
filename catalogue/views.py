@@ -33,7 +33,7 @@ class BookDetail(DetailView):
 def my_view(request):
     return render(request, 'catalogue/my_view.html')
 
-
+#Additional fields can be added
 class SignUpView(CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
